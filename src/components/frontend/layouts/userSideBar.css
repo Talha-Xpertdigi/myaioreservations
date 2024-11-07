@@ -1,0 +1,13 @@
+.userSideBar{
+    width: 100%;
+    max-width: 540px;
+}
+
+.userSideBar img{
+    width: 100%;
+    position: fixed;
+    left: 0;
+    max-width: 540px;
+    height: 100vh;
+    object-fit: cover;
+}

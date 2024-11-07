@@ -1,0 +1,66 @@
+{
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/free-solid-svg-icons": "^6.5.2",
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.7.2",
+    "bootstrap": "^5.3.3",
+    "cors-anywhere": "^0.4.4",
+    "framer-motion": "^11.9.0",
+    "react-bootstrap": "^2.10.4",
+    "react-data-table-component": "^7.6.2",
+    "react-data-table-component-extensions": "^1.6.0",
+    "react-datepicker": "^7.1.0",
+    "react-datetime-picker": "^6.0.1",
+    "react-icons": "^5.2.1",
+    "react-paginate": "^8.2.0",
+    "react-phone-input-2": "^2.15.1",
+    "react-router-dom": "^6.25.1",
+    "react-scripts": "5.0.1",
+    "react-select": "^5.8.0",
+    "react-time-picker": "^7.0.0",
+    "react-to-webcomponent": "^2.0.0",
+    "sweetalert2": "^11.12.3",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.25.2",
+    "@babel/preset-env": "^7.25.4",
+    "@babel/preset-react": "^7.24.7",
+    "babel-loader": "^9.2.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "webpack": "^5.94.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-manifest-plugin": "^5.0.0"
+  }
+}

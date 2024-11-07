@@ -1,0 +1,511 @@
+.service-wrapper {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  padding: 15px;
+  padding-top: 100px;
+  background-color: #f8f9fa;
+}
+
+.service-sidebar {
+  width: 300px;
+  background-color: #fff;
+  overflow-y: auto;
+  box-shadow: 0 0 10px #9b9ac573;
+  border-radius: 15px;
+}
+
+.service-sidebar h2 {
+  margin-bottom: 0px;
+  font-size: 20px;
+}
+
+.sidebarMain {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+button.cloneButton {
+  position: absolute;
+  right: 10px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: #50497F;
+}
+
+.service-item h3 {
+  margin-bottom: 0;
+  font-size: 17px;
+  color: #50497F;
+}
+
+.days-list strong {
+  color: #50497F;
+}
+
+.service-sidebar ul {
+  list-style: none;
+  padding: 15px;
+}
+
+.service-item {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s;
+  position: relative;
+  z-index: 1;
+}
+
+.service-item.active,
+.service-item:hover {
+  background-color: #e9ecef;
+}
+
+.service-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  margin-right: 15px;
+}
+
+.service-details {
+  flex: 1 1;
+  margin-left: 20px;
+  overflow-y: auto;
+  background: #fff;
+  padding: 20px 0;
+  border-radius: 15px;
+  box-shadow: 0 0 10px #9b9ac573;
+}
+
+.service-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.service-detail-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  margin-right: 20px;
+  object-fit: cover;
+}
+
+.service-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.copyButton,
+.goToButton {
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.copyButton {
+  background-color: #6c757d;
+  color: white;
+}
+
+.goToButton {
+  background-color: #50497F;
+  color: white;
+}
+
+.service-details .service-info {
+  margin-top: 20px;
+  padding: 5px 20px;
+}
+
+.service-info h2 {
+  margin-bottom: 5px;
+  font-size: 27px;
+}
+
+.service-info p {
+  margin-bottom: 10px;
+}
+
+.days-list {
+  list-style: none;
+  padding: 0;
+}
+
+.day-item {
+  margin-bottom: 10px;
+}
+
+.times-list {
+  list-style: none;
+  padding-left: 20px;
+  margin-top: 5px;
+}
+
+.time-item {
+  margin-bottom: 5px;
+}
+
+.viewDetailsButton {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.viewDetailsButton:hover {
+  background-color: #218838;
+}
+
+/* .search-bar {
+  position: relative;
+} */
+
+.search-bar input {
+  width: 100%;
+  padding: 5px 30px 5px 10px;
+  border: none;
+  border-radius: 15px 15px 0px 0px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  outline: none;
+}
+
+.search-icon {
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  font-size: 15px;
+  color: #50497F;
+}
+
+.serviceSearch {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #cdcdcd;
+  gap: 4px;
+  margin-bottom: 20px;
+  padding: 13px 16px;
+  position: relative;
+  color: #50497F;
+}
+
+.serviceHeaderContent {
+  display: flex;
+}
+
+.serviceHeaderContent p {
+  margin-bottom: 0;
+}
+
+.no-services {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.no-services p {
+  font-size: 35px;
+  line-height: 124%;
+  font-weight: 700;
+  color: #50497F;
+  margin-bottom: 0;
+}
+
+a.addNewService {
+  background: #50497f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 22px;
+  color: #fff;
+  height: 18px;
+  font-size: 12px;
+  width: 18px;
+  border-radius: 4px;
+}
+
+.add-service-button {
+  background-color: #50497F;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 39px;
+  height: 33px;
+}
+
+.serviceHeaderContent h1 {
+  margin-bottom: 0;
+}
+
+.addNewService {
+  position: relative;
+  display: inline-block;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  width: 111px;
+  background-color: #50497f;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 3px 0;
+  position: absolute;
+  font-size: 12px;
+  z-index: 99;
+  top: -11px;
+  left: -51px;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.addNewService:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+/* width */
+.service-details::-webkit-scrollbar,
+.service-sidebar::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+/* Track */
+.service-details::-webkit-scrollbar-track,
+.service-sidebar::-webkit-scrollbar-track {
+  border-radius: 0;
+  background-color: #f3f3f3;
+}
+
+/* Handle */
+.service-details::-webkit-scrollbar-thumb,
+.service-sidebar::-webkit-scrollbar-thumb {
+  background: #50497F;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.service-details::-webkit-scrollbar-thumb:hover,
+.service-sidebar::-webkit-scrollbar-thumb:hover {
+  background: #413b66;
+}
+
+.service-details .service-form {
+  margin: 0px auto;
+  max-width: 100%;
+  border: none;
+  border-radius: 0;
+  box-shadow: unset;
+  padding: 20px 30px;
+}
+
+.service-details .service-time-form {
+  max-width: 100%;
+  border: 0;
+  border-radius: 0;
+  box-shadow: unset;
+  margin: 0px;
+  padding: 20px 30px;
+}
+
+.service-item p {
+  margin-bottom: 0;
+  font-size: 12px;
+}
+
+.service-item span {
+  font-size: 23px;
+  color: #fff;
+  background: #c4c6c9;
+  height: 38px;
+  display: flex;
+  width: 38px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.service-item:hover span {
+  background: #50497f;
+
+}
+
+.service-item.active span {
+  background: #50497f;
+}
+
+.day-box {
+  background-color: #f8f9fa;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.priceBox {
+  margin-top: 15px;
+}
+
+.day-box strong {
+  font-weight: bold;
+  color: #333;
+}
+
+.time-box {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 8px;
+  margin-top: 7px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  overflow: auto;
+}
+
+.time-box p {
+  margin: 0;
+  color: #555;
+}
+
+.days-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.day-item {
+  flex: 1 1 300px;
+}
+
+.days-list ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.days-list strong,
+.priceBox strong {
+  color: #50497F;
+}
+
+@media screen and (max-width: 992px) {
+  .service-wrapper {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .service-details {
+    margin-left: 0px;
+  }
+
+  .service-sidebar {
+    width: 100%;
+  }
+
+  .service-sidebar ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(187px, 1fr));
+    padding: 15px;
+    gap: 20px;
+    height: 141px;
+    align-items: center;
+  }
+
+  .service-header {
+    flex-wrap: wrap;
+  }
+
+  .service-header {
+    gap: 20px;
+  }
+
+  .service-info .service-info-card {
+    padding: 30px 20px;
+  }
+
+}
+
+@media screen and (max-width: 576px) {
+  .service-info p {
+    font-size: 13px;
+  }
+
+  .serviceHeaderContent h1 {
+    font-size: 22px;
+  }
+
+  .service-details .service-form {
+    padding: 10px 20px;
+  }
+
+  .service-image-container {
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+
+  .service-detail-image {
+    margin-bottom: 5px !important;
+  }
+
+  .service-wrapper {
+    padding-top: 75px;
+  }
+
+  .service-actions button {
+    padding: 0;
+    height: 40px;
+    width: 40px;
+  }
+
+  .service-detail-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    margin-right: 10px;
+    object-fit: cover;
+  }
+
+}
+
+@media screen and (max-width: 458px) {
+  .service-sidebar ul {
+    margin-bottom: 113px;
+  }
+
+  .service-sidebar ul {
+    height: 50px;
+    gap: 10px;
+  }
+}

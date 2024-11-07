@@ -1,0 +1,48 @@
+/* stepIndicator.css */
+.step-indicator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .step-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .step {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #50497f; /* Your primary color */
+    border-radius: 50%;
+    font-weight: bold;
+    color: #50497f;
+    z-index: 1;
+    background-color: white;
+    transition: background-color 2s ease, color 2s ease;
+  }
+  
+  .step.completed {
+    background-color: #50497f; /* Color for completed and active steps */
+    color: white;
+  }
+  
+  .progress-line {
+    width: 60px; /* Adjust the width between steps */
+    height: 4px;
+    background-color: #ddd; /* Background color for unfilled progress */
+    position: relative;
+  }
+  
+  .progress-bar {
+    height: 100%;
+    background-color: #50497f; /* Progress bar color */
+    transition: width 0.5s ease-in-out;
+  }
+  

@@ -1,0 +1,107 @@
+.successMessage p {
+  color: green;
+  font-size: 20px;
+  width: 100%;
+  max-width: 800px;
+  margin: 15px auto;
+}
+
+.confirmation button {
+  padding: 10px 30px;
+}
+
+.confirmation .stepsHeading {
+  margin-bottom: 22px;
+}
+
+.selectedServices {
+  border: 1px solid #ffffff50;
+  padding: 20px;
+}
+
+.confirmationTable {
+  width: 100%;
+  border-collapse: collapse;
+  /* Ensures borders are collapsed */
+  border: 1px solid #ddd;
+  /* Optional: Overall table border */
+}
+
+.tableHeader,
+.tableData {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  /* Border for each row */
+}
+
+.tableHeader {
+  background: transparent;
+  /* Optional: Header row background color */
+}
+
+.tableData {
+  background: transparent;
+  /* Optional: Data row background color */
+}
+
+.confirmBtns {
+  display: flex;
+  gap: 20px;
+}
+
+.stepsHeading {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.servicesContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.serviceCard {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  background-color: #fff;
+}
+
+.serviceHeader h3 {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.serviceBody p {
+  margin: 5px 0;
+}
+
+.serviceFooter {
+  margin-top: 10px;
+  text-align: right;
+}
+
+/* .btn-danger {
+ border-radius: 100px;
+} */
+
+
+.confirmBtns {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.buttonDiv {
+  display: flex;
+  gap: 10px;
+}
+
+@media screen and (max-width: 576px) {
+  .confirmation button {
+    padding: 8px 26px;
+  }
+}

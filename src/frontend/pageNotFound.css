@@ -1,0 +1,56 @@
+.not-found-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #50497F;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .notFound-message {
+    transition: transform 0.3s ease-out;
+    position: relative;
+    z-index: 2;
+    background-color: transparent;
+    color: #fff;
+
+  }
+  
+  .error-title {
+    font-size: 12rem; /* Very large font for 404 */
+    margin: 0;
+    font-weight: bold;
+    letter-spacing: 5px;
+    color: #ffffff;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .error-text {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
+  .home-link {
+    font-size: 1.2rem;
+    color: white;
+    background-color: #6C63FF;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    display: inline-block;
+  }
+  
+  .home-link:hover {
+    background-color: #5249bf;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+ 
+  

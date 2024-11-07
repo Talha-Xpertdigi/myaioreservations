@@ -1,0 +1,120 @@
+.profileContent {
+    text-align: center;
+    box-shadow: 0 0 10px #9b9ac573;
+    max-width: 100%;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 0 30px;
+    margin-top: 100px;
+}
+
+.profileHeader{
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.profile-info {
+    width: 100%;
+    border: 1px solid #EFEFEF;
+    border-radius: 20px;
+    overflow: auto;
+    box-shadow: 0 0 4px #9b9ac552;
+}
+
+button.editSaveButton {
+    background-color: #50497F;
+    color: #fff;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 8px;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.profileRight input[type="text"], .profileRight input[type="email"] {
+    padding: 0;
+    height: unset;
+    padding-left: 4px;
+}
+
+.profileHeader{
+    background-color: #FAFAFA;
+    border-bottom: 1px solid #EFEFEF;
+    height: 60px;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile-info p{
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+.profileContent{
+    display: flex;
+    gap: 40px;
+}
+
+.profileRight{
+    display: flex;
+    gap: 40px;
+    text-align: left;
+    padding-bottom: 0;
+}
+
+.profileMain {
+    padding: 30px;
+    padding-bottom: 20px;
+}
+
+.profileRight ul {
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.profileRight ul li{
+    list-style: none;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.copyLinkButton {
+    background-color: #50497F;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    padding: 8px 19px;
+}
+
+
+.copyLinkButton:hover {
+   background-color: #352f5c;
+}
+
+.editButton {
+    text-align: left;
+}
+
+@media screen and (max-width: 992px) {
+    .profileContent {
+        flex-wrap: wrap;
+    }
+    .profileHeader {
+        gap: 10px;
+        flex-wrap: wrap;
+        padding: 13px 20px;
+        height: auto;
+    }
+    .profileContent{
+        margin: 0 20px;
+        padding: 20px;
+        margin-top: 100px;
+    }
+    .profileRight {
+        padding: 0px;
+        gap: 30px;
+    }
+  }

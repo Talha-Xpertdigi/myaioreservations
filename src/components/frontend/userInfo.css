@@ -1,0 +1,232 @@
+.react-tel-input .country-list .country-name {
+  margin-right: 6px;
+  color: #000;
+}
+
+.phoneInput .form-control {
+  height: 38px;
+  width: 100%;
+}
+
+.totalPrice {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.formSubmit {
+  margin-top: 30px;
+}
+
+td.tableHeader {
+  border-bottom: 1px solid #fff;
+}
+
+/* userInfo.css */
+
+.required-label:after {
+  content: "*";
+  color: red;
+  margin-left: 4px;
+}
+
+.form-group {
+  width: 100%;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.phoneInput {
+  width: 100%;
+}
+
+.confirmationTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.confirmationTable td,
+.confirmationTable th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.tableHeader {
+  font-weight: bold;
+}
+
+.tableData {
+  text-align: right;
+}
+
+
+
+.mainForm .formSubmit {
+  padding: 10px 22px;
+}
+
+.btn-secondary {
+  border-radius: 7px;
+}
+
+.btn-primary:disabled {
+  background-color: #cccccc;
+  border-color: #cccccc;
+  cursor: not-allowed;
+}
+
+/* .serviceCardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.serviceCard {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.serviceTitle {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+  */
+
+.serviceCard {
+  margin-top: 10px;
+}
+
+.serviceCard p {
+  margin: 0.5rem 0;
+}
+
+.firstFields {
+  display: flex;
+  gap: 10px;
+}
+
+.innerUserForm,
+.secondFormCards {
+  width: 100%;
+  padding: 25px;
+}
+
+.innerUserForm {
+  border-right: 1px solid #ccc;
+}
+
+/* .innerUserForm {
+  padding: 20px;
+  box-shadow: 0 0 10px #0000003b;
+  border-radius: 15px;
+} */
+
+.secondFormCards h3 {
+  margin-top: 0;
+}
+
+.appointmentsInnerForm h2 {
+  font-size: 26px;
+}
+
+.appointmentsInnerForm .forUserFormFlex {
+  display: flex;
+  background: #fff;
+  border-radius: 15px;
+  /* box-shadow: 0 0 10px #0000003b;
+  padding: 34px 25px; */
+  border: 1px solid #ccc;
+}
+
+.datepickerForm {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.5s forwards; /* Fade-in animation */
+}
+
+.serviceCard {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideIn 0.3s forwards; /* Slide-in animation for cards */
+  animation-delay: var(--delay); /* Use custom property for stagger effect */
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  outline: 0;
+  border-color: #50497F;
+  box-shadow: 0 2px 6px 0 rgba(115, 103, 240, .3);
+}
+
+@media screen and (max-width: 787px) {
+  .appointmentsInnerForm .forUserFormFlex {
+    flex-direction: column;
+  }
+
+  .innerUserForm {
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .innerUserForm,
+  .secondFormCards {
+    width: 100%;
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 567px) {
+  .firstFields {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .appointmentsInnerForm h2 {
+    font-size: 20px;
+  }
+
+  .serviceCard .serviceTitle {
+    font-size: 19px;
+  }
+
+  .totalPrice h5 {
+    font-size: 15px;
+  }
+
+  .innerUserForm,
+  .secondFormCards {
+    padding: 15px;
+  }
+
+  .mainForm .formSubmit {
+    padding: 8px 17px;
+    font-size: 13px;
+  }
+
+  .formSubmit {
+    margin-top: 10px;
+  }
+}

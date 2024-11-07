@@ -1,0 +1,140 @@
+.adminHeader {
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px #9b9ac573;
+    background-color: #50497F;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+.adminHeaderNav {
+    justify-content: space-between;
+    width: 100%;
+    padding: 0px 17px !important;
+}
+
+.headerNavLogo {
+    display: flex;
+    align-items: center;
+}
+
+.headerUl {
+    display: flex;
+    list-style: none;
+    margin-bottom: 0;
+    gap: 35px;
+    margin-top: 4px;
+}
+
+.headerUl li a {
+    color: #D7DADE;
+    font-size: 15px;
+}
+
+.mainHeaderNav {
+    width: 100%;
+}
+
+.mainHeaderNav h2 {
+    margin-bottom: 0;
+    font-size: 24px;
+    color: #fff;
+    font-weight: 300;
+}
+
+.mainHeaderNav a {
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.mainHeaderNav a:hover{
+    color: #fff;
+}
+
+.mainHeaderNav img {
+    width: 24px;
+    height: 24px;
+    margin-right: 6px;
+}
+
+.adminHeaderNav .nav-link {
+    color: #fff !important;
+}
+
+/* 
+.adminHeader a{
+    color: #fff !important;
+}
+
+.dropdown-menu a{
+    color: #000 !important;
+} */
+
+.dropdown-menu.show {
+    top: 45px;
+    left: -80px;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0 3px 10px #9896cb8f;
+}
+
+.dropdown-menu .dropdown-item{
+    color: #000;
+}
+
+.dropdown-menu .dropdown-item:hover{
+    color: #000;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+    color: #000;
+    text-decoration: none;
+    background-color: #f8f9fa;
+}
+
+.navbar-light .navbar-toggler {
+    color: rgb(255 255 255) !important;
+    border: none;
+}
+
+.mainHeaderNav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 992px) {
+    div#responsive-navbar-nav {
+        position: absolute;
+        background: #50497F;
+        top: 45px;
+        color: #000;
+        left: 0;
+        width: 100%;
+        border-radius: 0px 0px 15px 15px;
+    }
+    
+
+    ul.headerUl {
+        padding: 0;
+    }
+
+    .adminHeaderNav {
+        margin: 10px 0;
+    }
+
+    .headerUl {
+        gap: 6px;
+        flex-direction: column;
+    }
+
+    .headerNavLogo {
+        margin-bottom: 13px;
+    }
+    .mainHeaderNav a {
+        padding-right: 2px;
+    }
+}

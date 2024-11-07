@@ -1,0 +1,289 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 100px;
+    flex-wrap: wrap;
+}
+
+.tableSearch {
+    padding: 8px;
+    font-size: 16px;
+}
+
+.appointment-grid {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+    gap: 20px;
+}
+
+.grid-item {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: #50497f;
+    width: 100%;
+}
+
+.grid-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.grid-content {
+    margin-top: 10px;
+}
+
+.grid-icon {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.grid-icon svg {
+    margin-right: 8px;
+    margin-top: -3px;
+}
+
+.grid-info p {
+    margin: 5px 0;
+}
+
+.totalAppointments {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    gap: 15px;
+}
+
+.totalAppointments img {
+    margin-right: 5px;
+    margin-top: -3px;
+    width: 20px;
+    height: 21px;
+}
+
+input.tableSearch {
+    max-width: 300px;
+}
+
+input.tableSearch {
+    max-width: 300px;
+}
+
+.appointmentsWrapper {
+    background-color: #f5f5f5;
+    padding: 20px 30px;
+    min-height: 100vh;
+}
+
+.appointmentsFooter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.pagination button {
+    background-color: #50497f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.pagination button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.pagination span {
+    font-size: 16px;
+}
+
+.filters {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    width: 100%;
+    max-width: 550px;
+}
+
+.sortSelect {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #878787;
+    height: 42px;
+    background-color: #fff;
+}
+
+.selectStatus {
+    border: 1px solid #ccc;
+    padding: 1px 4px;
+    border-radius: 5px;
+    color: #50497f;
+    outline: none;
+    background-color: #fff;
+}
+
+.grid-header {
+    margin-bottom: 20px;
+}
+
+.grid-header h2 {
+    margin-bottom: 0;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.gridLast {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.noAppointments p {
+    font-size: 19px;
+    color: #50497f;
+}
+
+.totalAppointments span {
+    color: #50497f;
+}
+
+/* Glitter Loading Animation */
+.glitter-loading {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 6px solid rgba(255, 255, 255, 0.2);
+    border-top-color: #50497F;
+    animation: spin 1s infinite linear;
+    margin: 50px auto;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Fade-in animation for appointments */
+.grid-item {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.6s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Pagination Button Hover Animation */
+.pagination button {
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.pagination button:hover {
+    background-color: #50497F;
+    transform: scale(1.05);
+}
+
+.pagination button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.tableSearch,
+.sortSelect {
+    transition: all 0.3s ease;
+}
+
+.tableSearch:focus,
+.sortSelect:focus {
+    border-color: #50497F;
+}
+
+/* Add smooth transition to input elements */
+.selectStatus,
+.tableSearch {
+    transition: background-color 0.3s ease-in-out;
+}
+
+.selectStatus:focus,
+.tableSearch:focus {
+    background-color: #f0f0f0;
+}
+
+
+@media screen and (max-width: 992px) {
+    .filters {
+        max-width: 100%;
+    }
+
+    .appointmentsWrapper {
+        padding: 20px 20px;
+    }
+
+    .totalAppointments {
+        flex-wrap: wrap;
+    }
+
+    .appointment-grid h1 {
+        font-size: 32px;
+    }
+
+    .appointmentsFooter {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .filters {
+        margin-top: 7px;
+        flex-wrap: wrap;
+    }
+
+    input.tableSearch {
+        max-width: 100%;
+    }
+
+    .grid-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .sortSelect {
+        width: 100%;
+    }
+}

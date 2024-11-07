@@ -1,0 +1,378 @@
+.service-detail-container {
+    /* padding: 20px; */
+    margin: 0px 30px;
+    /* color: #fff; */
+    /* margin-right: 20px; */
+    max-width: 100%;
+    margin-top: 100px;
+}
+
+.serviceUpdateDetail {
+    box-shadow: 0 0 10px #9b9ac573;
+    border: 1px solid #333;
+    padding: 30px;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+.service-detail-container h1 {
+    margin-top: 40px;
+    margin-bottom: 15px;
+    color: #50497F;
+}
+
+.service-detail .service-info {
+    padding: 0;
+}
+
+/* .service-detail {
+    display: flex;
+    align-items: center;
+} */
+
+.service-info-card {
+    padding: 30px;
+    border: 1px solid #e7e7e7;
+    /* Darken border color */
+    border-radius: 20px;
+    background-color: var(--background-color);
+    /* Dark background */
+    box-shadow: 0 0 10px #9b9ac573;
+    margin-top: -10px;
+    color: var(--text-color);
+    margin-bottom: 50px;
+}
+
+.service-info-card h3 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.service-image-container {
+    margin-right: 20px;
+}
+
+.service-detail-image {
+    width: 160px;
+    margin-right: 15px;
+    height: 100px;
+    border-radius: 8px;
+    border: 2px solid #000;
+    margin-bottom: 30px;
+    object-fit: cover;
+}
+
+.service-info {
+    width: 100%;
+}
+
+.service-times,
+.service-days {
+    margin-top: 20px;
+}
+
+.updateButton {
+    background-color: #50497F;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.updateButton:hover {
+    background-color: #413b68;
+}
+
+.loading {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 60px;
+    text-align: center;
+}
+
+.service-detail-container input[type="text"],
+.service-detail-container input[type="date"],
+.service-detail-container input[type="number"],
+.service-detail-container input[type="time"],
+.service-detail-container textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+    background: transparent;
+    color: var(--text-color);
+}
+
+.service-image {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+.service-image-container {
+    display: flex;
+}
+
+.service-days-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.service-days-table th,
+.service-days-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+/* .service-days-table th {
+    background-color: #333;
+} */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 131;
+}
+
+.popup-inner {
+    background-color: var(--background-color);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    color: var(--text-color);
+}
+
+.service-detail .popup-inner {
+    max-width: 800px;
+    height: 96vh;
+    overflow: auto;
+    margin: 40px 0;
+}
+
+.poputTimes {
+    gap: 10px;
+}
+
+.slotsPopup {
+    width: 100%;
+}
+
+.popup-inner select {
+    width: 100%;
+    height: 40px;
+}
+
+.popupBtns {
+    display: flex;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+button.cancelButton {
+    background: #d51528;
+}
+
+button.cancelButton:hover {
+    background: #a80a1a;
+}
+
+.deleteIcon {
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.updateBtn {
+    background: #50497F !important;
+}
+
+/* .tableButtons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} */
+
+div:where(.swal2-container) input:where(.swal2-input),
+div:where(.swal2-container) input:where(.swal2-file),
+div:where(.swal2-container) textarea:where(.swal2-textarea),
+div:where(.swal2-container) select:where(.swal2-select),
+div:where(.swal2-container) div:where(.swal2-radio),
+div:where(.swal2-container) label:where(.swal2-checkbox) {
+    margin: 0 !important;
+}
+
+input#new_time_gap {
+    height: 38px;
+}
+
+.tableButtons .deleteIcon {
+    color: rgba(255, 0, 0, 0.61);
+}
+
+.service-detail {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    margin-top: 27px;
+}
+
+.service-info-card .service-description {
+    height: 79px;
+}
+
+.service-cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(470px, 1fr));
+    gap: 20px;
+}
+
+.service-day-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #9b9ac573;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.day-header h4 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.timings-section,
+.details-section {
+    margin-bottom: 10px;
+}
+
+.time-info,
+.time-details {
+    margin-bottom: 5px;
+}
+
+.card-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.updateTimeButton {
+    color: white;
+    padding: 5px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.deleteIcon {
+    color: #f44336;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.updateButton {
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.cardSection {
+    display: flex;
+    gap: 45px;
+    margin-top: 15px;
+}
+
+.popup-inner label span {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.counter {
+    font-size: 13px;
+    margin-top: -6px;
+    text-align: right;
+}
+
+.popup-inner input {
+    margin-bottom: 10px;
+}
+
+.serviceDetailMain h1{
+    margin: 0;
+}
+
+.serviceDetailMain button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 38px;
+    background: transparent;
+    color: #50497F;
+    font-size: 22px;
+    border: none;
+}
+
+.serviceDetailMain {
+    display: flex;
+    align-items: center;
+    gap: 0px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 992px) {
+    .service-cards-container {
+        grid-template-columns: repeat(auto-fill, minmax(299px, 1fr));
+    }
+
+    .service-detail-image {
+        margin-bottom: 5px;
+    }
+
+    .service-detail-container {
+        margin: 0px 20px;
+        margin-top: 100px;
+    }
+
+    .service-detail .popup-inner {
+        margin: 40px 20px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .service-cards-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .poputTimes {
+        flex-wrap: wrap;
+    }
+    .service-detail-container h1 {
+        font-size: 29px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .cardSection {
+        flex-direction: column;
+        gap: 0;
+        }
+}

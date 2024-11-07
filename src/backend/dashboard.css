@@ -1,0 +1,9 @@
+.admin-dashboard {
+    padding: 0 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .service-form h2 {
+        font-size: 20px;
+    }
+}
